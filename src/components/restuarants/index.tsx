@@ -1,1 +1,1 @@
-export { default as Restaurants } from '@/components/restuarants/Restaurants';
+export { Restaurants } from '@/components/restuarants/Restaurants';

@@ -2,7 +2,7 @@ import { Card, Image } from '@heroui/react';
 import paymentMethodsData from '../../../public/data/paymentMethods.json';
 import HeaderWithDescription from '@/components/common/TwoColorHeaderWithDescription';
 
-export default function PaymentMethods() {
+export const PaymentMethods = () => {
     return (
         <section className='py-20 px-10 bg-white text-black'>
             <HeaderWithDescription titleBold={paymentMethodsData.titleBold} titleThin={paymentMethodsData.titleThin} description={paymentMethodsData.description} />

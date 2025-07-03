@@ -2,7 +2,7 @@ import { Button, Chip, Image } from '@heroui/react';
 import heroData from '../../../public/data/heroData.json';
 import { Sparkle } from '../icons';
 
-export default function Hero() {
+export const Hero = () => {
     return (
         <section>
             <div className="max-h-screen h-[1000px] w-full bg-hero-background bg-cover bg-center pt-16 flex flex-col justify-center relative">

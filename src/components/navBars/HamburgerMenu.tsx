@@ -1,6 +1,7 @@
 import { Link, NavbarMenu, NavbarMenuItem } from "@heroui/react";
 
-export default function HamburgerMenu() {
+export const HamburgerMenu = (
+) => {
     const menuItems = [
         { label: "Take Payments", href: "#" },
         { label: "Power Your Business", href: "#" },

@@ -7,11 +7,11 @@ import {
   NavbarItem,
   NavbarMenuToggle,
 } from '@heroui/react';
-import { Logo } from '@/components/icons/Logo';
-import HamburgerMenu from './HamburgerMenu';
 import React from 'react';
+import { Logo } from '@/components/icons/Logo';
+import { HamburgerMenu } from '@/components/navBars/HamburgerMenu';
 
-export default function NavBarHeader() {
+export const NavBarHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (

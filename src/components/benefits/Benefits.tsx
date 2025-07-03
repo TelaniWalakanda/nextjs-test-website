@@ -1,9 +1,9 @@
 import { Button, Chip, Image } from "@heroui/react";
 import HeaderWithDescription from "@/components/common/TwoColorHeaderWithDescription";
 import benefitsData from '../../../public/data/benefitsData.json';
-import ScanQR from '@/components/icons/ScanQR';
+import { ScanQR } from "@/components/icons";
 
-export default function PaymentMethods() {
+export const Benefits = () => {
     return (
         <section className='py-20 px-10 bg-white text-black'>
             <HeaderWithDescription titleBold={benefitsData.titleBold} titleThin={benefitsData.titleThin} description={benefitsData.description} />

@@ -1,1 +1,2 @@
-export { default as NavBarHeader } from '@/components/navBars/NavBarHeader';
+export { NavBarHeader } from '@/components/navBars/NavBarHeader';
+export { HamburgerMenu } from '@/components/navBars/HamburgerMenu';

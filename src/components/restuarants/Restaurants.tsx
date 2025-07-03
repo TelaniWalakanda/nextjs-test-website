@@ -1,8 +1,7 @@
 import React from 'react';
 import restaurantsData from '../../../public/data/restaurantsData.json';
 
-export default function Restaurants() {
-
+export const Restaurants = () => {
     return (
         <section>
             <div className="grid grid-cols-2">

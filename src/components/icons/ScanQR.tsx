@@ -1,6 +1,6 @@
 import { SvgProps } from "@/common/types";
 
-export default function ScanQR(
+export const ScanQR = (
     {
         color = 'currentColor',
         size,
@@ -8,7 +8,7 @@ export default function ScanQR(
         width,
         ...props
     }: SvgProps
-) {
+) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={size ?? width ?? "800px"} height={size ?? height ?? "800px"} viewBox="0 0 512 512" {...props}>
             <polygon fill={color} points="48 48 176 48 176 16 16 16 16 176 48 176 48 48" className="ci-primary" />
@@ -26,5 +26,5 @@ export default function ScanQR(
             <rect width="32" height="32" x="336" y="336" fill={color} className="ci-primary" />
             <rect width="32" height="32" x="272" y="336" fill={color} className="ci-primary" />
         </svg>
-    )
-}
+    );
+};

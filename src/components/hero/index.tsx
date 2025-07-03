@@ -1,1 +1,1 @@
-export { default as Hero } from '@/components/hero/Hero';
+export { Hero } from '@/components/hero/Hero';
