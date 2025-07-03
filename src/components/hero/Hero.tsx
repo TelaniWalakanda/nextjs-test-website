@@ -24,16 +24,16 @@ export default function Hero() {
             <div className='absolute z-50 top-[45%] right-[15%] max-h-[500px] max-w-[500px]'>
                 <Image src={heroData.heroImage} alt="Hero Image" className='h-[430px]' />
             </div>
-            <div className='grid grid-cols-2 px-24 bg-primary py-7'>
-                <div>
-                    <div className='text-2xl'>{heroData.heroBottom.rightText.textThin}</div>
-                    <div className='text-3xl font-semibold'>{heroData.heroBottom.rightText.textBold}</div>
+            <div className='grid grid-cols-3 px-24 bg-primary py-7'>
+                <div className="col-span-1">
+                    <p className='text-3xl tracking-wide'>{heroData.heroBottom.rightText.textThin}</p>
+                    <p className='text-3xl font-semibold'>{heroData.heroBottom.rightText.textBold}</p>
                 </div>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="col-span-2 grid grid-cols-3 gap-4">
                     {heroData.heroBottom.leftText.map((item, index) => (
                         <div key={index}>
-                            <div className="font-semibold text-3xl">{item.textBold}</div>
-                            <div className="opacity-80 text-lg">{item.textThin}</div>
+                            <p className="font-semibold text-3xl">{item.textBold}</p>
+                            <p className="opacity-80 text-lg">{item.textThin}</p>
                         </div>
                     ))}
                 </div>

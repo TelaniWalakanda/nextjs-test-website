@@ -1,0 +1,40 @@
+{
+    "restaurants": [
+        {
+            "name": "Enterprice",
+            "images": [
+                "/restaurants/bareburger.png",
+                "/restaurants/boka.png",
+                "/restaurants/brewdog.png",
+                "/restaurants/chickies-peters.png"
+            ]
+        },
+        {
+            "name": "Casual Dining",
+            "images": [
+                "/restaurants/lettuce-entertain-you.png",
+                "/restaurants/ramen-san.png",
+                "/restaurants/portofino.png",
+                "/restaurants/delbar.png"
+            ]
+        },
+        {
+            "name": "Breweries & Sports Bars",
+            "images": [
+                "/restaurants/ranallis.png",
+                "/restaurants/chickies-peters.png",
+                "/restaurants/brewdog.png",
+                "/restaurants/yards.png"
+            ]
+        },
+        {
+            "name": "Hotel Restaurants",
+            "images": [
+                "/restaurants/hoxton.png",
+                "/restaurants/mama-shelter.png",
+                "/restaurants/jo-joe.png",
+                "/restaurants/bareburger.png"
+            ]
+        }
+    ]
+}
