@@ -1,0 +1,17 @@
+{
+    "titleThin": "Enhance Your",
+    "titleBold": "Restaurant Experience",
+    "chiptext": "Unlock Comfort And Convenience",
+    "description": "By Utilizing Qlub, Businesses Can Unlock A New Level Of Comfort And Convenience Both For Themselves And Their Customers.",
+    "primaryButton": {
+        "text": "Book A Demo",
+        "link": "/signup"
+    },
+    "heroImage": "/frames/heroCard.svg",
+    "features": [
+        "Lightning Fast Performance",
+        "Mobile-First Design",
+        "SEO Optimized",
+        "Developer Friendly"
+    ]
+}

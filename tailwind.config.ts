@@ -1,18 +1,37 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+import heroui from '@heroui/react';
 
 export default {
-    content: [
-        './pages/**/*.{js,ts,jsx,tsx,mdx}',
-        './components/**/*.{js,ts,jsx,tsx,mdx}',
-        './app/**/*.{js,ts,jsx,tsx,mdx}',
-    ],
-    theme: {
-        extend: {
-            colors: {
-                background: "var(--background)",
-                foreground: "var(--foreground)",
-            },
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+
+        transparent: 'transparent',
+        black: '#000',
+        white: '#fff',
+        darkgray: '#231E1E',
+        orange: '#FF764D',
+        xflo: '#6C62F3',
+        ert: '#B91646',
+        cardslk: '#43B0FF',
+        primary: {
+          DEFAULT: 'black',
+          dark: 'white',
+          hover: 'var(--button-hover-color)',
         },
+      },
+      backgroundImage: {
+        'hero-background': "url('/frames/hero-background.png')",
+      },
     },
-    plugins: [],
+  },
+  plugins: [],
 } satisfies Config;

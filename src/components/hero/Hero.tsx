@@ -1,0 +1,29 @@
+import { Button, Chip, Image } from '@heroui/react';
+import heroData from '../../../public/data/heroData.json';
+import { Sparkle } from '../icons';
+
+export default function Hero() {
+    return (
+        <section>
+            <div className="max-h-screen h-[1000px] w-full bg-hero-background bg-cover bg-center pt-16 flex flex-col justify-center relative">
+                <div className='my-auto pl-[100px] max-w-[30%] lg:max-w-[45%]'>
+                    <Chip
+                        radius='md'
+                        variant="flat"
+                        className='bg-opacity-10 pr-2 bg-white rounded-md ps-0 h-8'
+                        startContent={<Sparkle className='bg-white bg-opacity-10 h-full rounded-md p-2 w-8' />}
+                    >
+                        {heroData.chiptext}
+                    </Chip>
+                    <h1 className="uppercase tracking-wider text-5xl mt-10 font-thin leading-tight">{heroData.titleThin}</h1>
+                    <h1 className="uppercase text-5xl font-bold">{heroData.titleBold}</h1>
+                    <p className="text-lg mt-4 text-gray-300">{heroData.description}</p>
+                    <Button><span>{heroData.primaryButton.text}</span></Button>
+                </div>
+            </div>
+            <div className='absolute z-50 top-[45%] right-[15%] max-h-[500px] max-w-[500px]'>
+                <Image src={heroData.heroImage} alt="Hero Image" className='h-[430px]' />
+            </div>
+        </section>
+    );
+}
