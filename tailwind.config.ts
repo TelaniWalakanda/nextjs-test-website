@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-import heroui from '@heroui/react';
+import { heroui } from '@heroui/react';
 
 export default {
   content: [
@@ -23,9 +23,7 @@ export default {
         ert: '#B91646',
         cardslk: '#43B0FF',
         primary: {
-          DEFAULT: 'black',
-          dark: 'white',
-          hover: 'var(--button-hover-color)',
+          DEFAULT: '#7d01d4',
         },
       },
       backgroundImage: {
@@ -33,5 +31,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [heroui()],
 } satisfies Config;

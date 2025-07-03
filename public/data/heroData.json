@@ -8,10 +8,24 @@
         "link": "/signup"
     },
     "heroImage": "/frames/heroCard.svg",
-    "features": [
-        "Lightning Fast Performance",
-        "Mobile-First Design",
-        "SEO Optimized",
-        "Developer Friendly"
-    ]
+    "heroBottom": {
+        "rightText": {
+            "textThin": "Choose To Take Payments",
+            "textBold": "With Qlub"
+        },
+        "leftText": [
+            {
+                "textBold": "Save 16 Min",
+                "textThin": "Per Table"
+            },
+            {
+                "textBold": "Earn 300%",
+                "textThin": "More Tips"
+            },
+            {
+                "textBold": "Get 7X",
+                "textThin": "Positive Google Reviews"
+            }
+        ]
+    }
 }

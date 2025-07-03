@@ -6,23 +6,37 @@ export default function Hero() {
     return (
         <section>
             <div className="max-h-screen h-[1000px] w-full bg-hero-background bg-cover bg-center pt-16 flex flex-col justify-center relative">
-                <div className='my-auto pl-[100px] max-w-[30%] lg:max-w-[45%]'>
+                <div className='my-auto pl-24 max-w-[30%] lg:max-w-[45%]'>
                     <Chip
                         radius='md'
                         variant="flat"
-                        className='bg-opacity-10 pr-2 bg-white rounded-md ps-0 h-8'
-                        startContent={<Sparkle className='bg-white bg-opacity-10 h-full rounded-md p-2 w-8' />}
+                        className='bg-opacity-10 pr-2 bg-white rounded-md ps-0 h-8 text-white'
+                        startContent={<Sparkle className='bg-white bg-opacity-10 h-full rounded-md p-2 w-8' color='white' />}
                     >
                         {heroData.chiptext}
                     </Chip>
                     <h1 className="uppercase tracking-wider text-5xl mt-10 font-thin leading-tight">{heroData.titleThin}</h1>
                     <h1 className="uppercase text-5xl font-bold">{heroData.titleBold}</h1>
                     <p className="text-lg mt-4 text-gray-300">{heroData.description}</p>
-                    <Button><span>{heroData.primaryButton.text}</span></Button>
+                    <Button color='primary' className='w-fit h-auto p-3 mt-4 px-6'>{heroData.primaryButton.text}<span><Image src="right-arrow.png" /></span></Button>
                 </div>
             </div>
             <div className='absolute z-50 top-[45%] right-[15%] max-h-[500px] max-w-[500px]'>
                 <Image src={heroData.heroImage} alt="Hero Image" className='h-[430px]' />
+            </div>
+            <div className='grid grid-cols-2 px-24 bg-primary py-7'>
+                <div>
+                    <div className='text-2xl'>{heroData.heroBottom.rightText.textThin}</div>
+                    <div className='text-3xl font-semibold'>{heroData.heroBottom.rightText.textBold}</div>
+                </div>
+                <div className="grid grid-cols-3 gap-4">
+                    {heroData.heroBottom.leftText.map((item, index) => (
+                        <div key={index}>
+                            <div className="font-semibold text-3xl">{item.textBold}</div>
+                            <div className="opacity-80 text-lg">{item.textThin}</div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );

@@ -47,7 +47,7 @@ export default function NavBarHeader() {
           <NavbarItem>
             <Button
               as={Link}
-              className="rounded-lg bg-black"
+              className="rounded-lg bg-black text-white"
               href="#"
               variant="flat"
               radius="lg"
