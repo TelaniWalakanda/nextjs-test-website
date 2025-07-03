@@ -19,7 +19,7 @@ export const NavBarHeader = () => {
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
         isBlurred={false}
-        className="px-10 absolute left-0 top-0 bg-transparent z-50 max-h-16"
+        className="pt-5 px-10 absolute left-0 top-0 bg-transparent z-50 max-h-16"
         classNames={{
           wrapper: 'max-w-full'
         }}
@@ -33,7 +33,7 @@ export const NavBarHeader = () => {
               Take Payments
             </Link>
           </NavbarItem>
-          <NavbarItem isActive>
+          <NavbarItem>
             <Link href="#" className="text-white">
               Power Your Business
             </Link>

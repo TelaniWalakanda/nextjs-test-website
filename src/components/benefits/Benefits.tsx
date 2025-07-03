@@ -1,4 +1,4 @@
-import { Button, Chip, Image } from "@heroui/react";
+import { Button, Chip, Image, Link } from "@heroui/react";
 import HeaderWithDescription from "@/components/common/TwoColorHeaderWithDescription";
 import benefitsData from '../../../public/data/benefitsData.json';
 import { ScanQR } from "@/components/icons";
@@ -23,7 +23,7 @@ export const Benefits = () => {
                         <span className='block font-bold'>{benefitsData.simpleScans.titleBold}</span>
                     </h3>
                     <p className='my-10'>{benefitsData.description}</p>
-                    <Button className="mt-14 bg-black text-white"></Button>
+                    <Button className="mt-14 bg-black text-white" as={Link} href={benefitsData.learmoreLink}>Learn More</Button>
                 </div>
                 <Image className="md:w-1/2" removeWrapper radius="lg" src={benefitsData.image} />
             </div>
