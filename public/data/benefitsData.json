@@ -1,0 +1,16 @@
+{
+    "titleThin": "Benefits You've always",
+    "titleBold": "Dreamed Of",
+    "description": "Every Time A Guest Pays With Qlub, You Earn Way More Than Just Revenue: More Tips, More Reviews, And More Data",
+    "primaryButton": {
+        "text": "Instant Transactions",
+        "link": "/signup"
+    },
+    "image": "/frames/scan-to-pay.png",
+    "simpleScans": {
+        "titleThin": "Simple Scans",
+        "titleBold": "Seamless Payments",
+        "description": "Experience The Ultimate Convienience of QR Payments With Our Simple Scans And Seamless Transactions."
+    },
+    "learmoreLink": "/learn-more"
+}

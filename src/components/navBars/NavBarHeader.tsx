@@ -5,13 +5,19 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenuToggle,
 } from '@heroui/react';
 import { Logo } from '@/components/icons/Logo';
+import HamburgerMenu from './HamburgerMenu';
+import React from 'react';
 
 export default function NavBarHeader() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
   return (
     <>
       <Navbar
+        onMenuOpenChange={setIsMenuOpen}
         isBlurred={false}
         className="px-10 absolute left-0 top-0 bg-transparent z-50 max-h-16"
         classNames={{
@@ -21,7 +27,7 @@ export default function NavBarHeader() {
         <NavbarBrand className="flex justify-start">
           <Logo />
         </NavbarBrand>
-        <NavbarContent className="hidden justify-center gap-8 sm:flex">
+        <NavbarContent className="hidden justify-center gap-8 md:flex">
           <NavbarItem>
             <Link href="#" className="text-white">
               Take Payments
@@ -44,7 +50,7 @@ export default function NavBarHeader() {
               Sign Up
             </Link>
           </NavbarItem>
-          <NavbarItem>
+          <NavbarItem className="hidden md:flex">
             <Button
               as={Link}
               className="rounded-lg bg-black text-white"
@@ -54,6 +60,15 @@ export default function NavBarHeader() {
             >
               Get Started
             </Button>
+          </NavbarItem>
+
+          {/* // Hamburger menu for mobile view */}
+          <NavbarItem className="flex md:hidden">
+            <NavbarMenuToggle
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              className="md:hidden z-10"
+            />
+            {isMenuOpen && <HamburgerMenu />}
           </NavbarItem>
         </NavbarContent>
       </Navbar>

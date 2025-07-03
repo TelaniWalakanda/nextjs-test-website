@@ -7,7 +7,7 @@
         "text": "Book A Demo",
         "link": "/signup"
     },
-    "heroImage": "/frames/heroCard.svg",
+    "heroImage": "/frames/hero-card.svg",
     "heroBottom": {
         "rightText": {
             "textThin": "Choose To Take Payments",

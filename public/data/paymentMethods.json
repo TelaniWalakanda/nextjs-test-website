@@ -1,0 +1,23 @@
+{
+    "titleThin": "Payment Methods Built",
+    "titleBold": "For Restaurants",
+    "description": "Every Time A Guest Pays With Qlub, You Earn Way More Than Just Revenue: More Tips, More Reviews, And More Data",
+    "cards": [
+        {
+            "image": "/cards/card1.png",
+            "alt": "card1"
+        },
+        {
+            "image": "/cards/card2.png",
+            "alt": "card2"
+        },
+        {
+            "image": "/cards/card3.png",
+            "alt": "card3"
+        },
+        {
+            "image": "/cards/card4.png",
+            "alt": "card4"
+        }
+    ]
+}

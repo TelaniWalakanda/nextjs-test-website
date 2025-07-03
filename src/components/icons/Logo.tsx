@@ -1,5 +1,4 @@
 import { SvgProps } from '@/common/types';
-import { p } from 'framer-motion/client';
 
 export const Logo = ({
   color = 'currentColor',
@@ -17,7 +16,7 @@ export const Logo = ({
       fill="none"
       {...props}
     >
-      <g clip-path="url(#clip0_202_137)">
+      <g clipPath="url(#clip0_202_137)">
         <mask
           id="mask0_202_137"
           maskUnits="userSpaceOnUse"
