@@ -19,7 +19,7 @@ export const NavBarHeader = () => {
       <Navbar
         onMenuOpenChange={setIsMenuOpen}
         isBlurred={false}
-        className="pt-5 px-10 absolute left-0 top-0 bg-transparent z-50 max-h-16"
+        className="pt-5 px-3 lg:px-10 absolute left-0 top-0 bg-transparent z-50 max-h-16"
         classNames={{
           wrapper: 'max-w-full'
         }}
@@ -66,7 +66,7 @@ export const NavBarHeader = () => {
           <NavbarItem className="flex md:hidden">
             <NavbarMenuToggle
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-              className="md:hidden z-10"
+              className="md:hidden z-50 w-fit"
             />
             {isMenuOpen && <HamburgerMenu />}
           </NavbarItem>

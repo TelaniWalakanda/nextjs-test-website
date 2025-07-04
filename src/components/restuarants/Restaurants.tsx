@@ -6,9 +6,9 @@ export const Restaurants = () => {
         <section>
             <div className="grid grid-cols-2">
                 {restaurantsData.restaurants.map((item, index) => (
-                    <div key={index} className='border border-gray-700 p-12 2xl:p-16'>
-                        <p className="font-semibold text-3xl opacity-50 mb-5 mx-4">{item.name}</p>
-                        <div className='flex flex-row justify-between items-center overflow-hidden h-32 px-4'>
+                    <div key={index} className='border border-gray-700 p-7 sm:p-12 2xl:p-16'>
+                        <p className="font-semibold text-center lg:text-left text-lg md:text-3xl opacity-50 mb-5 mx-4">{item.name}</p>
+                        <div className='grid justify-center lg:grid-cols-2 xl:grid-cols-4 gap-5 flex-row lg:justify-between items-center overflow-hidden px-4'>
                             {item.images.map((img, i) => (
                                 <img
                                     src={img}

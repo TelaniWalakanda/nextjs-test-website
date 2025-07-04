@@ -11,7 +11,7 @@ export const HamburgerMenu = (
     ];
 
     return (
-        <NavbarMenu className="z-10 w-fit h-fit backdrop-blur-md rounded-lg p-2 bg-transparent">
+        <NavbarMenu className="z-10 absolute top-0 pt-20  max-h-[40%] h-fit w-fit backdrop-blur-md rounded-lg bg-transparent justify-self-end">
             {menuItems.map((item, index) => (
                 <NavbarMenuItem key={`${item}-${index}`}>
                     <Link
