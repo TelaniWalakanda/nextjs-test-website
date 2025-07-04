@@ -25,6 +25,9 @@ export default {
         primary: {
           DEFAULT: '#7d01d4',
         },
+        secondary: {
+          DEFAULT: '#000',
+        },
       },
       backgroundImage: {
         'hero-background': "url('/frames/hero-background.png')",

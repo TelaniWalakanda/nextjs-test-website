@@ -16,8 +16,7 @@ export const HamburgerMenu = (
                 <NavbarMenuItem key={`${item}-${index}`}>
                     <Link
                         className="w-full"
-                        color={
-                            index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                        color={index === menuItems.length - 1 ? "secondary" : "foreground"
                         }
                         href={item.href}
                         size="lg"
