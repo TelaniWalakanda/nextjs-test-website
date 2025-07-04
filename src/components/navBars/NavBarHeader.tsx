@@ -46,7 +46,7 @@ export const NavBarHeader = () => {
         </NavbarContent>
         <NavbarContent justify="end" className="gap-4">
           <NavbarItem className="hidden lg:flex">
-            <Link href="#" className="text-white">
+            <Link href="/sign-up" className="text-white">
               Sign Up
             </Link>
           </NavbarItem>

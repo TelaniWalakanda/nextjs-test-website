@@ -6,7 +6,7 @@ export const HamburgerMenu = (
         { label: "Take Payments", href: "#" },
         { label: "Power Your Business", href: "#" },
         { label: "Resources", href: "#" },
-        { label: "Sign Up", href: "#" },
+        { label: "Sign Up", href: "/sign-up" },
         { label: "Get Started", href: "#" },
     ];
 
